@@ -1,16 +1,4 @@
-variable "file_name" {
-    default = "samplefile"
-  
-}
+output "etag" {
 
-
-
-variable "tags" {
-
-    default = {
-        Owner = "charan"
-        Environment = "dev"
-
-    }
-  
+  value = aws_s3_object.object.etag
 }
